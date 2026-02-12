@@ -1,24 +1,14 @@
 {
   "targets": {
-    "project-db": {
-      "id": "YOUR_DATABASE_ID_HERE",
+    "projects": {
+      "id": "YOUR_PROJECTS_DATABASE_ID",
       "type": "database",
-      "description": "Main project tracking database"
+      "description": "Main Projects database"
     },
-    "team-wiki": {
-      "id": "YOUR_PAGE_ID_HERE",
-      "type": "page",
-      "description": "Team wiki root page"
-    },
-    "meeting-notes": {
-      "id": "YOUR_PAGE_ID_HERE",
-      "type": "page",
-      "description": "Parent page for meeting notes"
-    },
-    "dashboard": {
-      "id": "YOUR_PAGE_ID_HERE",
-      "type": "page",
-      "description": "Team dashboard page"
+    "meetings-notes": {
+      "id": "YOUR_MEETINGS_NOTES_DATABASE_ID",
+      "type": "database",
+      "description": "Meetings/Notes database linked to Projects"
     }
   }
 }

@@ -6,19 +6,23 @@ A customization hub for managing Notion workspaces through an agent-driven workf
 
 ```
 notion-agent-hub/
-├── CLAUDE.md                # Agent instructions and workflow
-├── notion-config.json       # Friendly name -> Notion ID mappings
-├── .env.example             # Environment variable template
-├── requirements.txt         # Python dependencies
+├── CLAUDE.md                  # Agent instructions and workflow
+├── notion-config.json         # Friendly name -> Notion ID mappings
+├── .env.example               # Environment variable template
+├── requirements.txt           # Python dependencies
 ├── requests/
-│   ├── _template.md         # Request frontmatter template
+│   ├── _template.md           # Request frontmatter template
+│   ├── create-project-page.md # Example: create a project page
 │   └── example-create-project-tracker.md
 ├── templates/
-│   ├── project-tracker.json # Database template
-│   ├── meeting-notes.json   # Page template
-│   └── dashboard.json       # Page template
+│   ├── project-page.json      # Full project page with all sections
+│   ├── project-meeting.json   # Meeting notes scoped to a project
+│   ├── project-tracker.json   # Database template
+│   ├── meeting-notes.json     # Standalone meeting notes page
+│   └── dashboard.json         # Dashboard page
 └── scripts/
-    └── notion_client.py     # CLI client for the Notion API
+    ├── notion_client.py       # CLI client for the Notion API
+    └── create_project.py      # One-command project page creator
 ```
 
 ## Setup
@@ -49,40 +53,65 @@ notion-agent-hub/
 
 | Template | Type | Description |
 |---|---|---|
+| `project-page` | Page | Full project page: Overview, Timeline, Tasks, Meetings, Resources, Decisions, Risks, Retro |
+| `project-meeting` | Page | Meeting notes scoped to a specific project |
 | `project-tracker` | Database | Name, Status, Priority, Due Date, Owner, Tags |
-| `meeting-notes` | Page | Attendees, Agenda, Notes, Action Items sections |
+| `meeting-notes` | Page | Standalone meeting notes: Attendees, Agenda, Notes, Action Items |
 | `dashboard` | Page | Overview callout, Active Projects, Recent Notes |
+
+### Project Page Sections
+
+The `project-page` template creates a structured page with these sections:
+
+1. **Overview** — Goal, Scope, and Success Criteria (checkboxes)
+2. **Timeline & Milestones** — Start/end dates and milestone checkboxes
+3. **Tasks** — To Do / In Progress / Completed sections
+4. **Meetings & Notes** — Space for project-specific meeting sub-pages
+5. **Resources & Links** — External references, docs, repos, drives
+6. **Decisions Log** — Numbered decisions with date and rationale
+7. **Risks & Blockers** — Table with Risk, Impact, and Mitigation columns
+8. **Retrospective** — What went well, what to improve, action items
+
+## Quick Start: Create a Project Page
+
+```bash
+# Create a project page with one command
+python scripts/create_project.py "My New Project" --parent projects
+
+# With a custom icon
+python scripts/create_project.py "Mobile App Redesign" --parent projects --icon 📱
+```
 
 ## CLI Examples
 
 All commands use `scripts/notion_client.py` and accept either a friendly name from `notion-config.json` or a raw Notion ID.
 
 ```bash
-# Create a page under the team wiki
-python scripts/notion_client.py create-page --target team-wiki --title "Sprint Planning"
+# Create a project page from template
+python scripts/notion_client.py create-page --target projects --template project-page
+
+# Create a page with a title
+python scripts/notion_client.py create-page --target projects --title "Sprint Planning"
 
 # Create a database from a template
-python scripts/notion_client.py create-db --target team-wiki --template project-tracker
-
-# Create a meeting notes page from a template
-python scripts/notion_client.py create-page --target meeting-notes --template meeting-notes
+python scripts/notion_client.py create-db --target projects --template project-tracker
 
 # Get a page
-python scripts/notion_client.py get-page --target dashboard
+python scripts/notion_client.py get-page --target projects
 
 # Query a database
-python scripts/notion_client.py query-db --target project-db
+python scripts/notion_client.py query-db --target projects
 
 # Query with a filter
-python scripts/notion_client.py query-db --target project-db \
+python scripts/notion_client.py query-db --target projects \
   --filter '{"property": "Status", "select": {"equals": "In Progress"}}'
 
 # Update page properties
-python scripts/notion_client.py update-page --target project-db \
+python scripts/notion_client.py update-page --target projects \
   --properties '{"Status": {"select": {"name": "Done"}}}'
 
 # Append blocks to a page
-python scripts/notion_client.py append-blocks --target team-wiki \
+python scripts/notion_client.py append-blocks --target projects \
   --blocks '[{"object": "block", "type": "paragraph", "paragraph": {"rich_text": [{"type": "text", "text": {"content": "Hello from the CLI"}}]}}]'
 ```
 

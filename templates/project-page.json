@@ -1,0 +1,437 @@
+{
+  "object": "page",
+  "properties": {
+    "title": {
+      "title": [
+        {
+          "type": "text",
+          "text": { "content": "{{PROJECT_NAME}}" }
+        }
+      ]
+    }
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": { "content": "Project overview — Update this summary as the project evolves." },
+            "annotations": { "italic": true }
+          }
+        ],
+        "icon": { "type": "emoji", "emoji": "🎯" },
+        "color": "blue_background"
+      }
+    },
+
+    {
+      "object": "block",
+      "type": "divider",
+      "divider": {}
+    },
+
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [{ "type": "text", "text": { "content": "Overview" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [{ "type": "text", "text": { "content": "Goal" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [{ "type": "text", "text": { "content": "What is this project trying to achieve? Define the desired outcome." } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [{ "type": "text", "text": { "content": "Scope" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [{ "type": "text", "text": { "content": "What's in scope and out of scope for this project." } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [{ "type": "text", "text": { "content": "Success Criteria" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "to_do",
+      "to_do": {
+        "rich_text": [{ "type": "text", "text": { "content": "Define measurable outcome 1" } }],
+        "checked": false
+      }
+    },
+    {
+      "object": "block",
+      "type": "to_do",
+      "to_do": {
+        "rich_text": [{ "type": "text", "text": { "content": "Define measurable outcome 2" } }],
+        "checked": false
+      }
+    },
+
+    {
+      "object": "block",
+      "type": "divider",
+      "divider": {}
+    },
+
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [{ "type": "text", "text": { "content": "Timeline & Milestones" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": { "content": "Start: TBD  |  Target End: TBD" }
+          }
+        ],
+        "icon": { "type": "emoji", "emoji": "📅" },
+        "color": "gray_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "to_do",
+      "to_do": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": { "content": "Milestone 1 — " },
+            "annotations": { "bold": true }
+          },
+          {
+            "type": "text",
+            "text": { "content": "Description and target date" }
+          }
+        ],
+        "checked": false
+      }
+    },
+    {
+      "object": "block",
+      "type": "to_do",
+      "to_do": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": { "content": "Milestone 2 — " },
+            "annotations": { "bold": true }
+          },
+          {
+            "type": "text",
+            "text": { "content": "Description and target date" }
+          }
+        ],
+        "checked": false
+      }
+    },
+    {
+      "object": "block",
+      "type": "to_do",
+      "to_do": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": { "content": "Milestone 3 — " },
+            "annotations": { "bold": true }
+          },
+          {
+            "type": "text",
+            "text": { "content": "Description and target date" }
+          }
+        ],
+        "checked": false
+      }
+    },
+
+    {
+      "object": "block",
+      "type": "divider",
+      "divider": {}
+    },
+
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [{ "type": "text", "text": { "content": "Tasks" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [{ "type": "text", "text": { "content": "To Do" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "to_do",
+      "to_do": {
+        "rich_text": [{ "type": "text", "text": { "content": "Task — @Owner" } }],
+        "checked": false
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [{ "type": "text", "text": { "content": "In Progress" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [{ "type": "text", "text": { "content": "Move active tasks here." } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [{ "type": "text", "text": { "content": "Completed" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [{ "type": "text", "text": { "content": "Move finished tasks here." } }]
+      }
+    },
+
+    {
+      "object": "block",
+      "type": "divider",
+      "divider": {}
+    },
+
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [{ "type": "text", "text": { "content": "Meetings & Notes" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": { "content": "Add meeting notes as sub-pages below. Each meeting gets its own page to keep things organized." }
+          }
+        ],
+        "icon": { "type": "emoji", "emoji": "💬" },
+        "color": "yellow_background"
+      }
+    },
+
+    {
+      "object": "block",
+      "type": "divider",
+      "divider": {}
+    },
+
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [{ "type": "text", "text": { "content": "Resources & Links" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [{ "type": "text", "text": { "content": "Link to relevant docs, repos, designs, etc." } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [{ "type": "text", "text": { "content": "Link to shared drives or folders" } }]
+      }
+    },
+
+    {
+      "object": "block",
+      "type": "divider",
+      "divider": {}
+    },
+
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [{ "type": "text", "text": { "content": "Decisions Log" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": { "content": "Record key decisions so the team has a single source of truth." }
+          }
+        ],
+        "icon": { "type": "emoji", "emoji": "⚖️" },
+        "color": "purple_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": { "content": "[Date] " },
+            "annotations": { "bold": true }
+          },
+          {
+            "type": "text",
+            "text": { "content": "Decision — Rationale and context" }
+          }
+        ]
+      }
+    },
+
+    {
+      "object": "block",
+      "type": "divider",
+      "divider": {}
+    },
+
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [{ "type": "text", "text": { "content": "Risks & Blockers" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "table",
+      "table": {
+        "table_width": 3,
+        "has_column_header": true,
+        "has_row_header": false,
+        "children": [
+          {
+            "type": "table_row",
+            "table_row": {
+              "cells": [
+                [{ "type": "text", "text": { "content": "Risk / Blocker" } }],
+                [{ "type": "text", "text": { "content": "Impact" } }],
+                [{ "type": "text", "text": { "content": "Mitigation" } }]
+              ]
+            }
+          },
+          {
+            "type": "table_row",
+            "table_row": {
+              "cells": [
+                [{ "type": "text", "text": { "content": "Describe risk" } }],
+                [{ "type": "text", "text": { "content": "High / Med / Low" } }],
+                [{ "type": "text", "text": { "content": "How to address it" } }]
+              ]
+            }
+          }
+        ]
+      }
+    },
+
+    {
+      "object": "block",
+      "type": "divider",
+      "divider": {}
+    },
+
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [{ "type": "text", "text": { "content": "Retrospective" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [{ "type": "text", "text": { "content": "What went well" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [{ "type": "text", "text": { "content": "..." } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [{ "type": "text", "text": { "content": "What could improve" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [{ "type": "text", "text": { "content": "..." } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [{ "type": "text", "text": { "content": "Action items for next time" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "to_do",
+      "to_do": {
+        "rich_text": [{ "type": "text", "text": { "content": "..." } }],
+        "checked": false
+      }
+    }
+  ]
+}
