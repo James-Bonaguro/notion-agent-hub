@@ -1,0 +1,51 @@
+{
+  "object": "database",
+  "title": [
+    {
+      "type": "text",
+      "text": { "content": "Project Tracker" }
+    }
+  ],
+  "properties": {
+    "Name": {
+      "title": {}
+    },
+    "Status": {
+      "select": {
+        "options": [
+          { "name": "Not Started", "color": "gray" },
+          { "name": "In Progress", "color": "blue" },
+          { "name": "In Review", "color": "yellow" },
+          { "name": "Done", "color": "green" },
+          { "name": "Blocked", "color": "red" }
+        ]
+      }
+    },
+    "Priority": {
+      "select": {
+        "options": [
+          { "name": "Low", "color": "gray" },
+          { "name": "Medium", "color": "yellow" },
+          { "name": "High", "color": "orange" },
+          { "name": "Urgent", "color": "red" }
+        ]
+      }
+    },
+    "Due Date": {
+      "date": {}
+    },
+    "Owner": {
+      "people": {}
+    },
+    "Tags": {
+      "multi_select": {
+        "options": [
+          { "name": "Engineering", "color": "blue" },
+          { "name": "Design", "color": "purple" },
+          { "name": "Marketing", "color": "green" },
+          { "name": "Operations", "color": "orange" }
+        ]
+      }
+    }
+  }
+}

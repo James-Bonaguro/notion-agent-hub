@@ -1,0 +1,72 @@
+{
+  "object": "page",
+  "properties": {
+    "title": {
+      "title": [
+        {
+          "type": "text",
+          "text": { "content": "Meeting Notes — YYYY-MM-DD" }
+        }
+      ]
+    }
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [{ "type": "text", "text": { "content": "Attendees" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [{ "type": "text", "text": { "content": "@Name" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [{ "type": "text", "text": { "content": "Agenda" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "numbered_list_item",
+      "numbered_list_item": {
+        "rich_text": [{ "type": "text", "text": { "content": "Topic 1" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [{ "type": "text", "text": { "content": "Notes" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [{ "type": "text", "text": { "content": "Discussion notes go here." } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [{ "type": "text", "text": { "content": "Action Items" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "to_do",
+      "to_do": {
+        "rich_text": [{ "type": "text", "text": { "content": "Action item — @Owner" } }],
+        "checked": false
+      }
+    }
+  ]
+}
