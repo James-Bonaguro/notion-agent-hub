@@ -1,0 +1,66 @@
+{
+  "object": "page",
+  "properties": {
+    "title": {
+      "title": [
+        {
+          "type": "text",
+          "text": { "content": "Dashboard" }
+        }
+      ]
+    }
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": { "content": "Overview — This dashboard provides a snapshot of active projects and recent notes. Update it regularly to keep the team aligned." }
+          }
+        ],
+        "icon": { "type": "emoji", "emoji": "📋" }
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [{ "type": "text", "text": { "content": "Active Projects" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": { "content": "Link or embed your project tracker database here." }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": {
+        "rich_text": [{ "type": "text", "text": { "content": "Recent Notes" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": { "content": "Link or embed recent meeting notes here." }
+          }
+        ]
+      }
+    }
+  ]
+}
