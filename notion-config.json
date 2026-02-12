@@ -1,12 +1,17 @@
 {
   "targets": {
+    "jb-os": {
+      "id": "6e5668b0471f49e9bd5763db964cca30",
+      "type": "page",
+      "description": "JB OS — top-level workspace page"
+    },
     "projects": {
-      "id": "YOUR_PROJECTS_DATABASE_ID",
+      "id": "aebad0fb4bdc4825b2d07582e9771d95",
       "type": "database",
       "description": "Main Projects database"
     },
     "meetings-notes": {
-      "id": "YOUR_MEETINGS_NOTES_DATABASE_ID",
+      "id": "8c2ebf276e3741fbb8bee8d4b4e1a6ef",
       "type": "database",
       "description": "Meetings/Notes database linked to Projects"
     }
